@@ -1,0 +1,26 @@
+{
+  "name": "@absurd-finance/credit-bureau",
+  "description": "Cross-chain credit reporting",
+  "version": "1.0.0",
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "solhint-community": "^3.6.0"
+  },
+  "keywords": [
+    "ethereum",
+    "credit",
+    "lending",
+    "reporting"
+  ],
+  "private": true,
+  "scripts": {
+    "clean": "rm -rf cache out",
+    "lint": "pnpm lint:sol && pnpm prettier:check",
+    "lint:sol": "forge fmt --check && pnpm solhint {script,src,test}/**/*.sol",
+    "prettier:check": "prettier --check **/*.{json,md,yml} --ignore-path=.prettierignore",
+    "prettier:write": "prettier --write **/*.{json,md,yml} --ignore-path=.prettierignore"
+  },
+  "dependencies": {
+    "pnpm": "^8.6.10"
+  }
+}

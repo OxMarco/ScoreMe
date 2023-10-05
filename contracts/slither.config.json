@@ -1,0 +1,9 @@
+{
+  "filter_paths": "(lib/|test/)",
+  "exclude_informational": true,
+  "solc_remaps": [
+    "@prb/test/=lib/prb-test/src/",
+    "forge-std/=lib/forge-std/src/",
+    "@openzeppelin/=lib/openzeppelin-contracts/"
+  ]
+}

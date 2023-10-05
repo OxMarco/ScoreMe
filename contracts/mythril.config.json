@@ -1,0 +1,11 @@
+{
+  "remappings": [
+    "@prb/test/=lib/prb-test/src/",
+    "forge-std/=lib/forge-std/src/",
+    "@openzeppelin/=lib/openzeppelin-contracts/"
+  ],
+  "optimizer": {
+    "enabled": true,
+    "runs": 200
+  }
+}
